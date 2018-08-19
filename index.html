@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<link rel="stylesheet" types="text/css" href="comments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokejeto</title>
+</head>
+<body>
+<div class="container">
+    <div class="comment-box">
+      <div class="comment-form">
+        <div class="header">Pokejeto</div>
+        <form>
+          <div> 
+          <div>
+            Pokemon: <input type="text" id="pokeid" value="">  </div>
+ 			<div>Possible Individual Values  <input  type="text" id="idid" value="1"> <button onclick="gerar()">Click me</button></div>
+    		<div><p>Nome  <input  type="text" id="nameid" value=""></p> </div>
+    		<div><p>Peso  <input type="text" id="pesoid" value=""></p>  </div>
+   			<div><p>Tipo: <input type="text" id="tipoId"></div>
+    		<div><p>Descrição <input type="text" id="descrid" value=""></p> </div>
+   			<div><p>Ataques: <input type="text" id="poderid"></p></div>
+    		<div><p>Foto   <img id="fotoid" style="display: none;" src="" alt="FotoPokemon" style="width:304px;height:228px;"></div>
+        <div class="header">Seu Comentario Aqui</div>
+
+            <input type="text" id="name" placeholder="Name"/>
+            <input type="text" id="email" placeholder="E-mail"/>
+
+          </div>
+          <div>
+            <textarea id="comment" rows="3" cols="30" placeholder="Comment"></textarea>
+          </div><span>Recarregue a pagina para novos comentarios de cada pokemon</span>
+          <button type="submit">COMMENT</button>
+        </form>  
+      </div>
+      <div>
+        <h4 class="header">Comments</h4>
+        <div id="comments"></div>
+      </div>
+      <div class="footer"><hr><p>&copy 2017 by Frai Felipe</p></div>
+    </div>
+  </div>
+
+
+
+</body>
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src="comments.js"></script>
+<script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+<script src="main.js"></script>
+</html>
+
+
